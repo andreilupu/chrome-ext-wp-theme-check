@@ -1,0 +1,23 @@
+{
+	"background": {
+		"persistent": false,
+		"scripts": [ "background.js" ]
+	},
+	"content_scripts": [ {
+		"all_frames": false,
+		"js": [ "content-scripts.js" ],
+		"matches": [ "http://*/*", "https://*/*" ],
+		"run_at": "document_idle"
+	} ],
+	"homepage_url": "http://andrei-lupu.com",
+	"key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0v0qGtr04JoX1v7vQhUbJnIWg886nficpSmtk033KzDxEl7+muXPWW9OjfgGr5JZ2oqn6MbeTrU12/EgRYB3F1CfwictJNXctsGzqsdDLyrsJbHEhKse2Gz514w/GgjPLsQgZUGHgF+5trMmkfJiZ3VWNx7K/zapJvQTocC9hNb/jbeneZUDYr9ce0ZYGlPdUVUHnjEF+3lYN41zBuhqxSkDSjYjXJj8CJZ5nrSa+L2z6yYMjiHcojK0rkEMJSLd8TGhjqyvj/Ytx8EbAuT1nIZIac1XZSf4AEOCZgy0DjX68M1a6x3I2gnwvUUpmK1TrZQwvuI3IMbp5OTJ6LfmZQIDAQAB",
+	"manifest_version": 2,
+	"name": "WordPress Theme Check",
+	"offline_enabled": true,
+	"page_action": {
+		"default_title": "WordPress Theme Check"
+	},
+	"content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+	"update_url": "https://clients2.google.com/service/update2/crx",
+	"version": "0.3.16"
+}

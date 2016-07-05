@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<style>
+		.theme_stats {
+			width: 240px;
+		}
+
+		.theme_stats ul {
+			list-style: none;
+			padding: 0 10px;
+		}
+
+		#author_name {
+			cursor: pointer;
+			color: #1d36f5;
+		}
+
+		#version {
+			padding: 0 3px;
+			border-radius: 15px;
+		}
+
+		.up_to_date {
+			color: #00CF02;
+			font-weight: bold;
+			border: 3px dotted #00CF02;
+		}
+
+		.out_of_date{
+			color: #ff0c18;
+			font-weight: bold;
+			border: 3px dotted #ff0c18;
+		}
+	</style>
+</head>
+<body>
+<div class="theme_stats">
+	<ul>
+		<li>Theme name: <span id="theme_name"></span></li>
+		<li>Theme version: <span id="theme_version"></span></li>
+		<li>WordPress version: <span id="wp_version"></span></li>
+		<li>Author Name: <span id="author_name"></span></li>
+	</ul>
+</div>
+<script src="popup.js"></script>
+</body>
+</html>
+
